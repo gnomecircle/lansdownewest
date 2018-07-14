@@ -1,0 +1,42 @@
+const globalI18n = {
+    'en': {
+        'open': 'Open',
+        'full': 'Full',
+        'more.info': 'More Info',
+        'resources': 'Resources',
+        'Workshops': 'Workshops',
+        'contact': 'Contact',
+		'Upcoming.Workshops': 'Upcoming Workshops',
+        'Workshops.subheading': 'Our experienced tutors can help you prepare with our highly successful workshops.',
+        'description': 'Description',
+        'details': 'Details',
+        'cost': 'Cost',
+        'instructor': 'Instructor',
+        'exam.date': 'Exam date(s)',
+        'schedule': 'Schedule',
+        'goals': 'Goals',
+        'max.students': 'A maximum of 10 students will be accepted in each workshop.',
+        'register.today': 'Registration is ongoing and must be completed to reserve a seat in the workshop. Call us for more information.',
+	},
+    'fr': {
+        'open': 'Dispo',
+        'full': 'Complet',
+        'more.info': 'Plus d\'infos',
+        'resources': 'Resources',        
+        'Workshops': 'Ateliers',
+        'contact': 'Contacte',
+		'Upcoming.Workshops': 'Ateliers à venir',
+        'Workshops.subheading': 'Nos enseignants d\'expérience peuvent vous aidez avec nos ateliers.',
+        'description': 'Description',
+        'details': 'Détails',
+        'cost': 'Coût',
+        'instructor': 'Instructeur',
+        'exam.date': 'Date(s) d\'examen',
+        'schedule': 'Horaire',
+        'goals': 'Buts',
+        'max.students': 'Jusqu\'à 10 élèves peuvent être inscrits à cet atelier.',
+        'register.today': 'Vous devez vous enregistré pour réserver une place dans l\'atelier. Appelez-nous dès maintenant.',
+	}
+}
+
+export default globalI18n;

@@ -1,0 +1,22 @@
+.mc-field-group {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.mc-field-group .email {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    height: 43px;
+    font-size: 18px;
+    padding: 0px 12px 2px;
+}
+.mc-field-group .button {
+    background: #84BB3C;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+}

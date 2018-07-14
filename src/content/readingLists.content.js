@@ -1,0 +1,167 @@
+const readingLists = {
+    'en': {
+        gradeFiveAndSix: [
+            {
+                rank: '1',
+                title: 'Hatchet',
+                author: 'Gary Paulson',
+                blurb: 'The Secret, The Secret "What does Brian know?" Will he survive his ordeal in the wilderness?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/61tkn0Wgc-L._SX333_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '2',
+                title: 'Maniac Magee',
+                author: 'Jerry Spinelli',
+                blurb: 'When tragedy strikes Jeffrey Lionel Magee is suddenly orphaned – his search for a home begins',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51Su68j7%2BiL._SX349_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '3',
+                title: 'A Series of Unfortunate Events',
+                author: 'Lemony Snicket',
+                blurb: 'If you like books about sweet little things and happy days, then this book is not for you...',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51CuBOa85WL._SX351_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '4',
+                title: 'Holes',
+                author: 'Louis Sachar',
+                blurb: 'Stanley Yelnats thinks he is off to a wonderful summer camp adventure – he is in for a big surprise',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51KnkLoqfkL._SX319_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '5',
+                title: 'Wonder',
+                author: 'R.J.Palacio',
+                blurb: 'August Pullman is a wonder – what can you learn from him?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51nQKQZWR-L._SX337_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '6',
+                title: 'The Breadwinner',
+                author: 'Deborah Ellis',
+                blurb: 'The Taliban are in Afghanistan and life will never be the same.  Eleven year old Parvanna is thrown into the position of breadwinner when her father is taken off to prison.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51qL%2BIOrfwL._SX326_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '7',
+                title: 'Home Ice Advantage',
+                author: 'Thomas Earle',
+                blurb: 'Jake longs to be a hockey star – but, can he survive his dad’s abusive behavior?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51HjzWIOamL._SX331_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '8',
+                title: 'Number the Stars',
+                author: 'Lois Lowry',
+                blurb: 'The Nazis have invaded Europe.  It is 1943, and Annemarie and her Jewish friend Ellen are stopped by German soldiers.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51igOegVNTL._SX335_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '9',
+                title: 'The Watsons Go To Birmingham',
+                author: 'Christopher Paul Curtis',
+                blurb: 'The weird Watsons live in Flint, Michigan.  Their eldest son Rufus is 10, in grade 6 and gets sent down South to live with his grandmother until he learns to behave.  It is a time of racial tension and Rufus learns more than he counted on.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51K2ko3y8WL._SX302_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '10',
+                title: 'The One And Only Ivan',
+                author: 'Katherine Applegate',
+                blurb: 'Living at the Big Top Mall, Ivan is an easygoing gorilla, accustomed to humans. When Ruby, a baby elephant, arrives at the Mall, Ivan attempts to help her. A very moving story about friendship and hope told from the point of view of Ivan.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51DLkub2rOL._SX352_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+        ]
+    },
+    'fr': {
+        gradeFiveAndSix: [
+            {
+                rank: '1',
+                title: 'Hatchet',
+                author: 'Gary Paulson',
+                blurb: 'The Secret, The Secret "What does Brian know?" Will he survive his ordeal in the wilderness?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/61tkn0Wgc-L._SX333_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '2',
+                title: 'Maniac Magee',
+                author: 'Jerry Spinelli',
+                blurb: 'When tragedy strikes Jeffrey Lionel Magee is suddenly orphaned – his search for a home begins',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51Su68j7%2BiL._SX349_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '3',
+                title: 'A Series of Unfortunate Events',
+                author: 'Lemony Snicket',
+                blurb: 'If you like books about sweet little things and happy days, then this book is not for you...',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51CuBOa85WL._SX351_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '4',
+                title: 'Holes',
+                author: 'Louis Sachar',
+                blurb: 'Stanley Yelnats thinks he is off to a wonderful summer camp adventure – he is in for a big surprise',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51KnkLoqfkL._SX319_BO1,204,203,200_.jpg',
+            },
+            {
+                rank: '5',
+                title: 'Wonder',
+                author: 'R.J.Palacio',
+                blurb: 'August Pullman is a wonder – what can you learn from him?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51nQKQZWR-L._SX337_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '6',
+                title: 'The Breadwinner',
+                author: 'Deborah Ellis',
+                blurb: 'The Taliban are in Afghanistan and life will never be the same.  Eleven year old Parvanna is thrown into the position of breadwinner when her father is taken off to prison.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51qL%2BIOrfwL._SX326_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '7',
+                title: 'Home Ice Advantage',
+                author: 'Thomas Earle',
+                blurb: 'Jake longs to be a hockey star – but, can he survive his dad’s abusive behavior?',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51HjzWIOamL._SX331_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '8',
+                title: 'Number the Stars',
+                author: 'Lois Lowry',
+                blurb: 'The Nazis have invaded Europe.  It is 1943, and Annemarie and her Jewish friend Ellen are stopped by German soldiers.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51igOegVNTL._SX335_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '9',
+                title: 'The Watsons Go To Birmingham',
+                author: 'Christopher Paul Curtis',
+                blurb: 'The weird Watsons live in Flint, Michigan.  Their eldest son Rufus is 10, in grade 6 and gets sent down South to live with his grandmother until he learns to behave.  It is a time of racial tension and Rufus learns more than he counted on.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51K2ko3y8WL._SX302_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+            {
+                rank: '10',
+                title: 'The One And Only Ivan',
+                author: 'Katherine Applegate',
+                blurb: 'Living at the Big Top Mall, Ivan is an easygoing gorilla, accustomed to humans. When Ruby, a baby elephant, arrives at the Mall, Ivan attempts to help her. A very moving story about friendship and hope told from the point of view of Ivan.',
+                imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51DLkub2rOL._SX352_BO1,204,203,200_.jpg',
+                amzUrl: '',
+            },
+        ]
+    }
+    
+}
+
+export default readingLists;

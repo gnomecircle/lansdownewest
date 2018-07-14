@@ -1,0 +1,41 @@
+.subjects {
+    background: #F5F1E5;
+}
+
+.how-container {
+    line-height: 32px;
+}
+
+.how-container p {
+    font-size: 18px;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+	
+.subjects__panel {
+    min-height: 265px;
+    background: none;
+    text-transform: uppercase;
+}
+
+.subjects__panel--heading {
+    color: #3D3933;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #E6DBBE;
+    border-bottom: 1px solid #3D3933;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.subjects__panel--item {
+    display: block;
+    font-size: 13px;
+    min-height: 36px;
+    width: 100%;
+    padding: 12px 0 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(61, 57, 51, .25);
+}

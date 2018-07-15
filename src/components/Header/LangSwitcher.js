@@ -27,6 +27,13 @@ const StyledLangSwitcher = styled.div`
         width: 100%;
     }
 
+    &.disabled {
+        background: #84BB3C;
+        opacity: .5;
+
+        a { cursor: not-allowed; }
+    }
+
     @media (min-width: 768px) {
         height: 55px;
         width: 56px;
@@ -48,17 +55,17 @@ class LangSwitcher extends Component {
     render() {
         const { currentLang, languageToggle } = this.props;
         const otherLang = currentLang === 'en' ? 'fr' : 'en';
-        const langTogglePath = translationPaths[this.state.currentPath] || '/fr';
-        
+        const translationAvailable = this.state.currentPath.includes('/blog') ? false : true;
+        const langTogglePath = translationPaths[this.state.currentPath];
+
         return (
-            <StyledLangSwitcher>
-                <Link
-                    to={langTogglePath}
-                    className="lang-switcher--link"
-                    onClick={languageToggle}
+            <StyledLangSwitcher className={!translationAvailable && 'disabled'}>
+                <a
+                    href={translationAvailable ? langTogglePath : ''}
+                    onClick={translationAvailable ? languageToggle : null}
                 >
                     {otherLang}
-                </Link>
+                </a>
             </StyledLangSwitcher>
         )
     }

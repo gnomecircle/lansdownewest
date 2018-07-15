@@ -46,7 +46,7 @@ const Banner = ({ currentLang, bannerImg, bannerMessage, pageTitle }) => {
     const since = currentLang === 'en' ? 'since' : 'depuis';
 
     const StyledBannerContainerImage = StyledBannerContainer.extend`
-        background: url(${bannerImg}) no-repeat center;
+        background: ${bannerImg ? `url(${bannerImg}) no-repeat center` : null};        
         background-size: contain;
     `;
 
@@ -63,7 +63,7 @@ const Banner = ({ currentLang, bannerImg, bannerMessage, pageTitle }) => {
 
 Banner.propTypes = {
     currentLang: PropTypes.string.isRequired,
-    bannerImg: PropTypes.string.isRequired,
+    bannerImg: PropTypes.string,
     bannerMessage: PropTypes.string,
     pageTitle: PropTypes.string,
 }

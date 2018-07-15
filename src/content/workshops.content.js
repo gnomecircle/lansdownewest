@@ -1,5 +1,53 @@
 const workshops = {
     'en': {
+        hsep: {
+            current: true,
+            date: 'Fall 2018',
+            title: 'High School Entrance Exam Preparation',
+            description: `This workshop is for grade 5 students writing that will be writing their high school entrance exams this fall. (As private schools begin posting exam dates, dates of prep workshops may be subject to change and/or workshops may be added on.)`,
+            goals: [
+                'Experienced, qualified instructor',
+                'Small groups',
+                'Practice tests (increase of logic-based questions)',
+                'Evaluations',
+                'Interview Practice',
+                'Handouts',
+
+            ],
+            instructor: 'Karen Kravitz',
+            langOffered: ['English'],
+            grade: 'Grade 5',
+            price: '$150',
+            schedule: [
+                {
+                    date: 'Wed. Aug 22',
+                    time: '9am to 1pm',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Sep 8',
+                    time: '9am to 1pm',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Sep 22',
+                    time: '9am to 1pm',
+                    open: true,   
+                },
+                {
+                    date: 'Sat. Oct 6',
+                    time: '9am to 1pm',
+                    open: true,   
+                },
+                {
+                    date: 'Sat. Oct 20',
+                    time: '9am to 1pm',
+                    open: true,   
+                }
+            ],
+            examDate: 'Variable',
+            infoLink: '/en/workshops/high-school-entrance-exam-prep'
+        },
         history: {
             current: false,
             date: 'June 2018',
@@ -79,9 +127,58 @@ const workshops = {
             ],
             examDate: '',
             infoLink: '/en/workshops/high-school-entrance-exam-prep-spring-edition'
-        }
+        },
     },
     'fr': {
+        hsep: {
+            current: true,
+            date: 'Automne 2018',
+            title: 'High School Exam Preparation',
+            description: `This workshop is for grade 5 students writing that will be writing their high school entrance exams this fall.`,
+            goals: [
+                'Experienced, qualified instructor',
+                'Small groups',
+                'Practice tests (increase of logic-based questions)',
+                'Evaluations',
+                'Interview Practice',
+                'Handouts',
+                'As private schools begin posting exam dates, dates of prep',
+                'workshops may be subject to change and/or workshops may be added on'
+            ],
+            instructor: 'Karen Kravitz',
+            langOffered: ['English'],
+            grade: 'Grade 5',
+            price: '$150',
+            schedule: [
+                {
+                    date: 'Wed. Aug 22',
+                    time: '9am to 1pm',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Sep 8',
+                    time: '9am to 1pm',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Sep 22',
+                    time: '9am to 1pm',
+                    open: true,   
+                },
+                {
+                    date: 'Sat. Oct 6',
+                    time: '9am to 1pm',
+                    open: true,   
+                },
+                {
+                    date: 'Sat. Oct 20',
+                    time: '9am to 1pm',
+                    open: true,   
+                }
+            ],
+            examDate: 'Variable',
+            infoLink: '/en/workshops/high-school-entrance-exam-prep'
+        },
         history: {
             current: false,
             date: 'Juin 2018',
@@ -160,7 +257,7 @@ const workshops = {
             ],
             examDate: '',
             infoLink: '/fr/ateliers/preparation-examen-entre-au-secondaire-printemps'
-        }
+        },
     }
 }
 

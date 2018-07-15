@@ -14,6 +14,7 @@ const announcements = [
     },
     {
         date: '05-06-2018',
+        image: 'nancy-honigman.jpg',
         'en': {
             title: 'Behavioral Therapist, Nancy Honigman joins our team.',
             description: 'Lansdownewest is pleased to announce that Nancy Honigman, a Behavioral Therapist, is joining our team. She will work with students, and their parents on social, emotional, and behavioural issues. As well, she is highly competent in the understanding of the impact of ADHD on learning, and in creating strategies that can be easily adapted by her students.',

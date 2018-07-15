@@ -7,12 +7,13 @@ import { H2, Text, H3 } from '../../_styledComponents/typography';
 import { palette } from '../../../data/siteTheming';
 import bannerImg from './banner-tutoring-centre.jpg';
 import Banner from '../../Banner/Banner';
+import HomePageMessage from './HomePageMessage';
 import Subjects from '../AboutPage/Subjects/Subjects';
 import Announcement from '../AnnouncementsPage/Announcement';
 
 // Content
-import announcements from '../../../content/announcements.content';
 import L from '../../../content/HomePage.content';
+import announcements from '../../../content/announcements.content';
 import workshops from '../../../content/workshops.content';
 
 const StyledH3 = H3.extend`
@@ -39,9 +40,12 @@ const HomePage = ({ currentLang }) => {
                 bannerImg={bannerImg}
                 bannerMessage={l['banner.message']}
             />
+            <HomePageMessage
+                message={l['main.message']}
+            />
             <Row><H2>Recent News</H2></Row>
             <Row>
-                <Column two>
+                <Column expand>
                     <StyledH3>{currentLang === 'en' ? 'Announcements' : 'Annonces'}</StyledH3>
                     <Announcement
                         key={0}
@@ -55,7 +59,7 @@ const HomePage = ({ currentLang }) => {
                     />
                     {/* add link to announcements page */}
                 </Column>
-                <StyledWorkshopContainer two>
+                <StyledWorkshopContainer three>
                     <StyledH3>{currentLang === 'en' ? 'Upcoming Workshops' : 'Ateliers à venir'}</StyledH3>
                     <ul>
                         {Object.keys(currentWorkshops).map((item, key) => {

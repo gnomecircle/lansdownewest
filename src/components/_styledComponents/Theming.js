@@ -49,8 +49,14 @@ const StyledHeaderNavItem = styled.li`
 `;
 const Blockquote = styled.blockquote`
     border: 2px dashed ${lansGreen};
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
     margin: 12px;
-    padding: 24px 18px;
+    padding: 14px 24px;
+    width: 100%;
 `;
 
 // FORMS

@@ -14,6 +14,9 @@ const StyledRow = Row.extend`
 const StyledH3 = H3.extend`
     margin: 0 0 6px;
 `;
+const StyledText = Text.extend`
+    font-size: 14px;
+`;
 
 const Announcement = ({ currentLang, announcement }) => {
     const { date, imageUrl } = announcement;
@@ -24,7 +27,7 @@ const Announcement = ({ currentLang, announcement }) => {
             <EntryDate currentLang={currentLang} date={date} />
             <Column expand>
                 <StyledH3>{title}</StyledH3>
-                <Text>{description}</Text>
+                <StyledText>{description}</StyledText>
                 {url && <a href={url}>More Info</a>}
             </Column>
         </StyledRow>

@@ -33,14 +33,14 @@ const Announcement = ({ currentLang, announcement }) => {
     const l = L[currentLang];
     const { date, image } = announcement;
     const { title, description, imageDescription, url } = announcement[currentLang];
-    console.log(image);
+
     return (
         <StyledRow>
             <EntryDate currentLang={currentLang} date={date} />
             <Column expand>
                 <StyledH3>{title}</StyledH3>
                 <StyledText>{description}</StyledText>
-                {url && <a to={`${url}`}><Button small right>{l['more.info']}</Button></a>}
+                {url && <a href={`${url}`}><Button small right>{l['more.info']}</Button></a>}
             </Column>
             {image && <StyledImg image={image} />}
         </StyledRow>

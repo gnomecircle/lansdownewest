@@ -2,17 +2,6 @@
 
 const announcements = [
     {
-        date: '23-06-2018',
-        'en': {
-            title: 'Hot Summer Deal',
-            description: '10 Lessons for $550! Call 514-697-4133 for more information.',
-        },
-        'fr': {
-            title: 'Rabais cool de l\'été',
-            description: '10 lessons pour seulement $550! Appelez-nous pour les détails.',
-        }
-    },
-    {
         date: '05-06-2018',
         image: 'nancy-honigman.jpg',
         'en': {
@@ -42,5 +31,20 @@ const announcements = [
         }
     },
 ];
+
+// NOT VISIBLE ON THE WEBSITE
+const archive = [
+    {
+        date: '23-06-2018',
+        'en': {
+            title: 'Hot Summer Deal',
+            description: '10 Lessons for $550! Call 514-697-4133 for more information.',
+        },
+        'fr': {
+            title: 'Rabais cool de l\'été',
+            description: '10 lessons pour seulement $550! Appelez-nous pour les détails.',
+        }
+    },
+]
 
 export default announcements;

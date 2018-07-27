@@ -22,7 +22,7 @@ const HeaderNav = ({ currentLang }) => {
                     url={navItem.workshops.url}
                     dropdownItems={dropdownItems}
                 />
-                <StyledHeaderNavItem><a href={`/${currentLang}${navItem.reading.url}`}>{navItem.reading.label}</a></StyledHeaderNavItem>
+                {/* <StyledHeaderNavItem><a href={`/${currentLang}${navItem.reading.url}`}>{navItem.reading.label}</a></StyledHeaderNavItem> */}
                 {/* <StyledHeaderNavItem><a href={`/${currentLang}${navItem.contact.url}`}>{navItem.contact.label}</a></StyledHeaderNavItem> */}
                 {/* <StyledHeaderNavItem><a href={`/${currentLang}${navItem.about.url}`}>{navItem.about.label}</a></StyledHeaderNavItem> */}
             </ul>

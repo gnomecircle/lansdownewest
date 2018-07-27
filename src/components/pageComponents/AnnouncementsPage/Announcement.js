@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Column, Row } from '../../_styledComponents/Layout';
 import { H1, H2, H3, Text } from '../../_styledComponents/typography';
+import { Button } from '../../_styledComponents/Theming';
 import { palette } from '../../../data/siteTheming';
 import EntryDate from './EntryDate';
+import L from '../../../content/global.content';
 
 const { lansBlue, lansLightBrown } = palette;
 const StyledRow = Row.extend`
@@ -28,6 +30,7 @@ const StyledText = Text.extend`
 `;
 
 const Announcement = ({ currentLang, announcement }) => {
+    const l = L[currentLang];
     const { date, image } = announcement;
     const { title, description, imageDescription, url } = announcement[currentLang];
     console.log(image);
@@ -37,7 +40,7 @@ const Announcement = ({ currentLang, announcement }) => {
             <Column expand>
                 <StyledH3>{title}</StyledH3>
                 <StyledText>{description}</StyledText>
-                {url && <a href={url}>More Info</a>}
+                {url && <a to={`${url}`}><Button small right>{l['more.info']}</Button></a>}
             </Column>
             {image && <StyledImg image={image} />}
         </StyledRow>

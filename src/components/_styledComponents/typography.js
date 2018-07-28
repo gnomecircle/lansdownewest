@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bodyWidth, palette, fontSize, lineHeight } from '../../data/siteTheming';
+import { bodyWidth, palette, fontSize, lineHeight, margin } from '../../data/siteTheming';
 
 // Note:
 // base fonts size is set in the css-reset.css file (10px)
@@ -46,9 +46,11 @@ const H6 = styled.h6`
 const Text = styled.p`
     color: ${props => props.light ? lansBeigeLight : lansDarkBrown};
     font-size: ${props => props.small ? '1rem' : fontSize.p};
-    font-weight: ${props => props.bold && '700'};
+    font-weight: ${props => props.bold ? '700' : '300'};
     line-height: ${lineHeight.p};
+    margin: ${margin.p};
     text-align: ${props => props.center && 'center'};
+    text-align: ${props => props.justify && 'justify'};
     text-transform: ${props => props.uppercase && 'uppercase'};
 `;
 const SubHeading = Text.extend`

@@ -53,10 +53,17 @@ const Blockquote = styled.blockquote`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
     margin: 12px;
     padding: 14px 24px;
-    width: 100%;
+`;
+const StyledImage = styled.div`
+    background: ${props => props.image && `url(/images/${props.image}) no-repeat center`};
+    background-size: cover;
+    border: 1px solid ${lansBlue};
+    border-radius: 3px;
+    height: ${props => props.height ? props.height : '100%'};
+    margin: 1.2rem;
+    width:  ${props => props.width ? props.width : '100%'};
 `;
 
 // FORMS
@@ -155,5 +162,6 @@ export {
     Label,
     StyledHeaderNav,
     StyledHeaderNavItem,
-    TextArea
+    TextArea,
+    StyledImage
 };

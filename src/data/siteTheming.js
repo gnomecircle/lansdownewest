@@ -36,9 +36,9 @@ module.exports = {
         h4: '',
         h5: '',
         h6: '',
-        p: '2.0rem',
+        p: '2.4rem',
     },
-    margins: {
-        p: '1.2rem 0',
+    margin: {
+        p: '1.2rem 0 2.4rem',
     }
 }

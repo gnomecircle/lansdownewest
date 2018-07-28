@@ -47,6 +47,7 @@ const StyledSocialList = styled.ul`
 `;
 const StyledCopyrightText = Text.extend`
     color: #F5F1E5;
+    margin: 0;
 `;
 
 const Footer = ({ currentLang }) => {

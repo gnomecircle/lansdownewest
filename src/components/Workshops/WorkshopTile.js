@@ -68,6 +68,8 @@ const StyledBanner = styled.div`
     line-height: 50px;
     transform: rotate(45deg);
     width: 200px;
+
+    p { margin: 0; }
 `;
 
 const WorkshopTile = ({ currentLang, workshop }) => {

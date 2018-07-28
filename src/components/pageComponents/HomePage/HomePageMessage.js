@@ -22,7 +22,7 @@ const HomepageMessage = ({ message }) => {
         <Row>
             <Blockquote>
                 <StyledIcon><FaBullHorn /></StyledIcon>
-                <Text>{message}</Text>
+                <Text bold>{message}</Text>
                 <StyledIcon right><FaBullHorn /></StyledIcon>
             </Blockquote>
         </Row>

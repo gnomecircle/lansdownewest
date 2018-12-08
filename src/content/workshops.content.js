@@ -1,22 +1,44 @@
 const workshops = {
     'en': {
-        hsep: {
+        studyStrategies: {
             current: true,
+            date: 'December & January',
+            title: 'Study Strategies to Reduce Anxiety',
+            description: 'There is an epidemic of school related anxiety which is having a profound effect on our young people.  We, at Lansdownewest would like to share some strategies which we feel will help your child to become a more effective, relaxed and successful student. For this reason we are offering a workshop for High School Students.',
+            instructor: 'Nancy Honigman B.Ed., PCC',
+            langOffered: ['English'],
+            grade: 'All grades',
+            price: '$65',
+            schedule: [
+                {
+                    date: 'Sat. Dec 15',
+                    time: '9:30 to 12:00',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Jan 13',
+                    time: '9:30 to 12:00',
+                    open: true,
+                }
+            ],
+            infoLink: '/en/workshops/study-strategies-to-reduce-anxiety'
+        },
+        hsep: {
+            current: false,
             date: 'Fall 2018',
             title: 'High School Entrance Exam Preparation',
-            description: `This workshop is for grade 5 students writing that will be writing their high school entrance exams this fall. (As private schools begin posting exam dates, dates of prep workshops may be subject to change and/or workshops may be added on.)`,
+            description: `This workshop is for grade 6 students that will be writing their high school entrance exams this fall. (As private schools begin posting exam dates, dates of prep workshops may be subject to change and/or workshops may be added on.)`,
             goals: [
                 'Experienced, qualified instructor',
                 'Small groups',
                 'Practice tests (increase of logic-based questions)',
                 'Evaluations',
                 'Interview Practice',
-                'Handouts',
-
+                'Handouts'
             ],
             instructor: 'Karen Kravitz',
-            langOffered: ['English'],
-            grade: 'Grade 5',
+            langOffered: ['English and French'],
+            grade: 'Grade 6',
             price: '$150',
             schedule: [
                 {
@@ -27,7 +49,7 @@ const workshops = {
                 {
                     date: 'Sat. Sep 8',
                     time: '9am to 1pm',
-                    open: true,
+                    open: false,
                 },
                 {
                     date: 'Sat. Sep 22',
@@ -40,7 +62,7 @@ const workshops = {
                     open: true,   
                 },
                 {
-                    date: 'Sat. Oct 20',
+                    date: 'Sat. Oct 13',
                     time: '9am to 1pm',
                     open: true,   
                 }
@@ -105,7 +127,7 @@ const workshops = {
             description: `This workshop is for grade 5 students writing for special programs for the Lester B. School Board. The workshop will concentrate on logic skills and test writing techniques.`,
             goals: [],
             instructor: 'Karen Kravitz',
-            langOffered: ['English'],
+            langOffered: ['English', 'French'],
             grade: 'Grade 5',
             price: '$150',
             schedule: [
@@ -130,50 +152,52 @@ const workshops = {
         },
     },
     'fr': {
-        hsep: {
+        studyStrategies: {
             current: true,
+            date: 'December & January',
+            title: 'Stratégies d\'apprentissages pour l\'anxiété',
+            description: 'There is an epidemic of school related anxiety which is having a profound effect on our young people.  We, at Lansdownewest would like to share some strategies which we feel will help your child to become a more effective, relaxed and successful student. For this reason we are offering a workshop for High School Students.',
+            instructor: 'Nancy Honigman B.Ed., PCC',
+            langOffered: ['anglais'],
+            grade: 'All grades',
+            price: '$65',
+            schedule: [
+                {
+                    date: 'Sat. Dec 15',
+                    time: '9:30 to 12:00',
+                    open: true,
+                },
+                {
+                    date: 'Sat. Jan 13',
+                    time: '9:30 to 12:00',
+                    open: false,
+                }
+            ],
+            infoLink: '/fr/ateliers/strategies-dapprentissage-pour-anxiete'
+        },
+        hsep: {
+            current: false,
             date: 'Automne 2018',
-            title: 'High School Exam Preparation',
-            description: `This workshop is for grade 5 students writing that will be writing their high school entrance exams this fall.`,
+            title: 'Atelier préparatoire au examens d\'entrée au secondaire',
+            description: `Cet atelier est pour les éleves de 6e année qui feront des examens d\'entrées au secondaire cet automne`,
             goals: [
                 'Experienced, qualified instructor',
-                'Small groups',
+                'Petits groupes',
                 'Practice tests (increase of logic-based questions)',
-                'Evaluations',
+                'Évaluations',
                 'Interview Practice',
                 'Handouts',
-                'As private schools begin posting exam dates, dates of prep',
-                'workshops may be subject to change and/or workshops may be added on'
+                'As private schools begin posting exam dates, dates of prep'
             ],
-            instructor: 'Karen Kravitz',
-            langOffered: ['English'],
-            grade: 'Grade 5',
+            instructor: 'Michele Moinet Shannon',
+            langOffered: ['anglais et français'],
+            grade: '6e année',
             price: '$150',
             schedule: [
                 {
-                    date: 'Wed. Aug 22',
-                    time: '9am to 1pm',
+                    date: 'Sam. Sept 23',
+                    time: '9h to 13h',
                     open: true,
-                },
-                {
-                    date: 'Sat. Sep 8',
-                    time: '9am to 1pm',
-                    open: true,
-                },
-                {
-                    date: 'Sat. Sep 22',
-                    time: '9am to 1pm',
-                    open: true,   
-                },
-                {
-                    date: 'Sat. Oct 6',
-                    time: '9am to 1pm',
-                    open: true,   
-                },
-                {
-                    date: 'Sat. Oct 20',
-                    time: '9am to 1pm',
-                    open: true,   
                 }
             ],
             examDate: 'Variable',

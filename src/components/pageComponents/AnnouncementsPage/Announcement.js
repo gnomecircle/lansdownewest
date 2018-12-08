@@ -26,23 +26,27 @@ const StyledH3 = H3.extend`
     margin: 0 0 6px;
 `;
 const StyledText = Text.extend`
-    font-size: 14px;
+    font-size: 16px;
 `;
 
 const Announcement = ({ currentLang, announcement }) => {
     const l = L[currentLang];
     const { date, image } = announcement;
     const { title, description, imageDescription, url } = announcement[currentLang];
+    
+    function insertHtml(string) {
+        return {__html: string};
+    }
 
     return (
         <StyledRow>
             <EntryDate currentLang={currentLang} date={date} />
             <Column expand>
                 <StyledH3>{title}</StyledH3>
-                <StyledText>{description}</StyledText>
+                <StyledText dangerouslySetInnerHTML={insertHtml(description)} />
                 {url && <a href={`${url}`}><Button small right>{l['more.info']}</Button></a>}
             </Column>
-            {image && <StyledImg image={image} />}
+            {image && <StyledImg image={image} alt={imageDescription} />}
         </StyledRow>
     )
 }

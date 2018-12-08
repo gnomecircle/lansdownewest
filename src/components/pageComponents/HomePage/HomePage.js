@@ -40,9 +40,9 @@ const HomePage = ({ currentLang }) => {
                 bannerImg={bannerImg}
                 bannerMessage={l['banner.message']}
             />
-            <HomePageMessage
+            {/* <HomePageMessage
                 message={l['main.message']}
-            />
+            /> */}
             <Row><H2>Recent News</H2></Row>
             <Row>
                 <Column expand>
@@ -63,6 +63,7 @@ const HomePage = ({ currentLang }) => {
                     <StyledH3>{currentLang === 'en' ? 'Upcoming Workshops' : 'Ateliers à venir'}</StyledH3>
                     <ul>
                         {Object.keys(currentWorkshops).map((item, key) => {
+                            console.log(item);
                             const { current, title, infoLink } = currentWorkshops[item];
                             if (current) {
                                 return <li key={key}><Text bold center><Link to={`${infoLink}`}>{title}</Link></Text></li>

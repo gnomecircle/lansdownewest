@@ -1,22 +1,36 @@
+
 // DATE FORMAT: day-month-year
 
 const announcements = [
     {
+        date: '01-12-2018',
+        image: '',
+        'en': {
+            title: 'New Workshop Added',
+            description: 'We have just added a workshop to help high school students reduce anxiety by learning more effective study strategies.',
+            url: '/en/workshops/study-strategies-to-reduce-anxiety'
+        },
+        'fr': {
+            title: 'Nouvel Atelier offert',
+            description: 'Un nouvel atelier destiné au élèves du secondaire souffrnat d\'anxiété. Ils apprendront des stratégies d\'apprentissages. Offert en anglais seulement.',
+            url: '/fr/ateliers/strategies-dapprentissage-pour-anxiete'
+        }
+    },
+    {
         date: '05-06-2018',
         image: 'nancy-honigman.jpg',
         'en': {
-            title: 'Behavioral Therapist, Nancy Honigman joins our team.',
-            description: 'Lansdownewest is pleased to announce that Nancy Honigman, a Behavioral Therapist, is joining our team. She will work with students, and their parents on social, emotional, and behavioural issues. As well, she is highly competent in the understanding of the impact of ADHD on learning, and in creating strategies that can be easily adapted by her students.',
+            title: 'School Counselor & Coach, Nancy Honigman joins our team.',
+            description: 'Where our tutors cover our students academic needs, Nancy works with our students and their families on issues that are socially, emotionally or behaviourally based. In particular, Nancy has been helping young people experiencing anxiety, to find effective strategies in order to overcome their challenge. As well, Nancy traches effective Study Strategies to students both on a one-to-one basis or through workshop format.',
         },
         'fr': {
-            title: 'Behavioral Therapist, Nancy Honigman joins our team.',
-            description: 'Lansdownewest is pleased to announce that Nancy Honigman, a Behavioral Therapist, is joining our team. She will work with students, and their parents on social, emotional, and behavioural issues. As well, she is highly competent in the understanding of the impact of ADHD on learning, and in creating strategies that can be easily adapted by her students.',
-            imageDescription: '',
+            title: 'School Counselor & Coach, Nancy Honigman joins our team.',
+            description: 'Where our tutors cover our students academic needs, Nancy works with our students and their families on issues that are socially, emotionally or behaviourally based. In particular, Nancy has been helping young people experiencing anxiety, to find effective strategies in order to overcome their challenge. As well, Nancy traches effective Study Strategies to students both on a one-to-one basis or through workshop format.',
         }
     },
     {
         date: '01-05-2018',
-        imageUrl: '',
+        image: '',
         'en': {
             title: 'Start now to prepare for June Exams',
             description: 'Our experienced tutors are ready to help. Science and technology, as well as history (final exam will be a prototype) and Math.',
@@ -34,6 +48,20 @@ const announcements = [
 
 // NOT VISIBLE ON THE WEBSITE
 const archive = [
+    {
+        date: '22-08-2018',
+        image: '',
+        'en': {
+            title: 'New French Workshop Added',
+            description: 'Due to popular demand, we have added a French version of the High School Entrance Exam that will be taught by Michèle Moinet Shannon, on September 23.',
+            url: '/fr/ateliers/preparation-examen-entre-au-secondaire'
+        },
+        'fr': {
+            title: 'Nouvel Atelier offert',
+            description: 'À la demande générale, notre atelier préparatoire au examens d\'admissions au secondaire est maintenant offert en français. Cet atelier sera donner par Michèle Moinet Shannon le 23 septembre.',
+            url: '/fr/ateliers/preparation-examen-entre-au-secondaire'
+        }
+    },
     {
         date: '23-06-2018',
         'en': {

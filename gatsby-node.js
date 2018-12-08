@@ -41,11 +41,10 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
     return new Promise((resolve, reject) => {
         if (page.path.startsWith('/fr')) {
             page.layout = 'indexFR';
-            createPage(page);
         } else {
             page.layout = 'index';
-            createPage(page);
         }
+        createPage(page);
         resolve();
     });
 }

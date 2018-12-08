@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Lansdowne West Tutoring Centre',
   },
   plugins: [
         `gatsby-plugin-react-helmet`,

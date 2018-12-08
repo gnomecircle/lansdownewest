@@ -34,12 +34,11 @@ const StyledDay = styled.p`
     font-size: 28px;
     font-weight: 700;
     padding: 9px 0;
-
 `;
-const StyledYear = styled.p`
-    color: ${lansBeige};
-    font-size: 10px;
-`;
+// const StyledYear = styled.p`
+//     color: ${lansBeige};
+//     font-size: 10px;
+// `;
 
 const EntryDate = ({ currentLang, date }) => {
     const ParsedDate = date.split('-');

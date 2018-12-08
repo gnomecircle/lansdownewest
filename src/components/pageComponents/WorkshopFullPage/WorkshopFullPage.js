@@ -32,6 +32,9 @@ const StyledDetails = styled.ul`
         }
     }
 `;
+const StyledItem = Text.extend`
+    margin: 0;
+`;
 
 const WorkshopFullPage = ({ currentLang, workshop }) => {
     const l = L[currentLang];
@@ -84,12 +87,16 @@ const WorkshopFullPage = ({ currentLang, workshop }) => {
                     </Blockquote>
                 </Column>
                 <StyledSidebar three>
-                    <H2>{l['goals']}</H2>
-                    <ul>
-                        {goals.map((goal, key) => (
-                            <li key={key}><span><FaCheckSquare /></span><Text>{goal}</Text></li>
-                        ))}
-                    </ul>
+                    {goals && (
+                        <div>
+                            <H2>{l['goals']}</H2>
+                            <ul>
+                                {goals.map((goal, key) => (
+                                    <li key={key}><span><FaCheckSquare /></span><StyledItem>{goal}</StyledItem></li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                     <Blockquote>
                         <Text center uppercase bold light>{l['max.students']}</Text>
                     </Blockquote>

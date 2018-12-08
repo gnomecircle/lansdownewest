@@ -72,6 +72,8 @@ module.exports = {
         '/fr/ateliers/histoire': '/en/workshops/history',
         '/en/workshops/science': '/fr/ateliers/science',
         '/fr/ateliers/science': '/en/workshops/science',
+        '/en/workshops/high-school-entrance-exam-prep': '/fr/ateliers/preparation-examen-entre-au-secondaire',
+        '/fr/ateliers/preparation-examen-entre-au-secondaire': '/en/workshops/high-school-entrance-exam-prep'
     }
   };
   
